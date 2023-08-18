@@ -1,0 +1,23 @@
+{
+  "name": "Boilerplate NextJs",
+  "short_name": "Boilerplate NextJs",
+  "icons": [
+    {
+      "src": "/next.svg",
+      "type": "image/svg+xml",
+      "sizes": " 512x512 192x192 64x64 32x32 24x24 16x16",
+      "purpose": "any"
+    },
+    {
+      "src": "/vercel.svg",
+      "type": "image/svg+xml",
+      "sizes": " 512x512 192x192 64x64 32x32 24x24 16x16",
+      "purpose": "any"
+    }
+  ],
+  "description": "Boilerplate NextJs + PWA + Styled Components + Jest + Tailwind + Storybook",
+  "display": "fullscreen",
+  "start_url": "/",
+  "background_color": "#fffbeb",
+  "theme_color": "#000000"
+}
