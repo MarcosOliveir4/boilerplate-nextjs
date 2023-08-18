@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useServerInsertedHTML } from 'next/navigation';
 import { StyleRegistry, createStyleRegistry } from 'styled-jsx';
+import GlobalStyles from '@/app/styles/global';
 
 export default function StyledJsxRegistry({
   children
@@ -13,7 +14,7 @@ export default function StyledJsxRegistry({
   useServerInsertedHTML(() => {
     const styles = jsxStyleRegistry.styles();
     jsxStyleRegistry.flush();
-    return <>{styles}</>;
+    return <GlobalStyles>{styles}</GlobalStyles>;
   });
 
   return <StyleRegistry registry={jsxStyleRegistry}>{children}</StyleRegistry>;

@@ -10,7 +10,9 @@
     "prepare": "husky install",
     "test": "jest -i --passWithNoTests",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@types/node": "20.4.9",
@@ -30,6 +32,14 @@
     "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-typescript": "^7.22.5",
+    "@storybook/addon-essentials": "^7.3.1",
+    "@storybook/addon-interactions": "^7.3.1",
+    "@storybook/addon-links": "^7.3.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.3.1",
+    "@storybook/nextjs": "^7.3.1",
+    "@storybook/react": "^7.3.1",
+    "@storybook/testing-library": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
@@ -48,7 +58,8 @@
     "jest-environment-jsdom": "^29.6.2",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^13.2.3",
-    "prettier": "^3.0.1"
+    "prettier": "^3.0.1",
+    "storybook": "^7.3.1"
   },
   "lint-staged": {
     "src/**/*": [
