@@ -67,5 +67,8 @@
       "yarn lint --fix",
       "yarn test --bail --findRelatedTests"
     ]
+  },
+  "engines": {
+    "node": "18.16.0"
   }
 }
